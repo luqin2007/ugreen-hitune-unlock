@@ -1,0 +1,26 @@
+# ------------------------------------------------------------------ secrets --
+# Signing material. NEVER commit: a published keystore lets anyone sign an APK
+# that installs as an update over the official one.
+module/keystore/
+module/keystore.properties
+
+# ------------------------------------------------------- proprietary input --
+# The UGREEN app installer (~195 MB, proprietary, not redistributable).
+# See tools/extract_apk.py for how the analysis tree is rebuilt from it.
+base.apk
+*.idsig
+
+# ------------------------------------------------- reverse-engineering scratch
+# Full logcat dumps contain device identifiers (MAC address, SSID, android_id).
+work/
+
+# --------------------------------------------------------- build artefacts --
+module/build/
+
+# -------------------------------------------------------------------- misc --
+*.log
+.DS_Store
+Thumbs.db
+
+# Agent workspace metadata (local paths, session notes) - not project source.
+.workbuddy/

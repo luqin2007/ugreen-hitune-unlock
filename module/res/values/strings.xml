@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HiTune 操控解锁</string>
+    <string name="module_description">解锁绿联耳机（UGREEN / HiTune 系列）的耳机操控自定义：让单击、双击、三击、长按以及左右耳、ANC 按键、音量键等每个手势都能选择 App 支持的全部功能（播放/暂停、音量加减、上下曲、语音助手、游戏模式、降噪、接听挂断、空间音频等），而不再受机型预设限制。</string>
+</resources>

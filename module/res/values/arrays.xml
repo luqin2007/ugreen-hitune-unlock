@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Only hook the UGREEN IoT app. -->
+    <string-array name="xposedscope">
+        <item>com.ugreen.iot</item>
+    </string-array>
+</resources>
