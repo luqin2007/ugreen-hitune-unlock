@@ -2,7 +2,7 @@
 
 解锁绿联 App（`com.ugreen.iot`）里耳机的**操控自定义**：让每个手势都能选到 App 支持的全部功能，而不是被机型预设挡掉。
 
-> **交付物**：`dist/HiTuneUnlock-1.0.apk` —— RSA-4096 正式签名，可直接安装
+> **下载**：[Releases](https://github.com/luqin2007/ugreen-hitune-unlock/releases) → `HiTuneUnlock-1.0.apk`（RSA-4096 正式签名，可直接安装）
 > **状态**：已在 HiTune S5 + LSPosed 2.1.1 (7790, API 102) / Android 16 上真机验证通过（见 §4.1）
 > **许可**：MIT，仅覆盖本仓库自有的代码与文档，见 [LICENSE](LICENSE)
 
@@ -139,6 +139,17 @@ keytool -printcert -jarfile dist/HiTuneUnlock-1.0.apk
 ```
 
 指纹对不上就说明 APK 被人重签过，别装。
+
+发布包本身也带哈希，可以从 [Releases](https://github.com/luqin2007/ugreen-hitune-unlock/releases) 下载后核对：
+
+```
+HiTuneUnlock-1.0.apk   25043 bytes
+SHA-256  71aa606a090412e8f913b1fd2082ea173c00e5de75ad4c9e6530be7ec16fbde2
+```
+
+```bash
+sha256sum HiTuneUnlock-1.0.apk
+```
 
 签名方案：v1 + v2 + v3 全部启用（`minSdk 24` 也带 v1，兼容个别 ROM 的安装器）。
 
